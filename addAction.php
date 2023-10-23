@@ -9,7 +9,7 @@
 require_once("dbConnection.php");
 
 
-	// Escape special characters in string for use in SQL statement	
+
 	$nombres = mysqli_real_escape_string($mysqli, $_POST['nombres']);
 	$apellidos = mysqli_real_escape_string($mysqli, $_POST['apellidos']);
 	$fecha = mysqli_real_escape_string($mysqli, $_POST['fecha']);
@@ -22,8 +22,8 @@ require_once("dbConnection.php");
 
 	
 		$result = mysqli_query($mysqli, "INSERT INTO personal (`id`, `nombres`, `apellidos`, `sexo`, `pais`, `departamento`, `fecha_nacimiento`, `email`, `area`) VALUES ('' ,'$nombres', '$apellidos', '$sexo', '$pais', '$departamento', '$fecha', '$email', '$area')");
-		echo $result;
-		
+	
+		header('Location: index.php');
 	
 	
 	
