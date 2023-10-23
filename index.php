@@ -14,7 +14,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+<div class="jumbotron">
+    <h1 class="display-3">Personal</h1>
+    <h3 class="lead">Mantenimiento de personal</h3>
+    <hr class="my-2">
+    <p class="lead">
+        <a class="btn btn-success" href="add.php" role="button">Agregar personal</a>
+        <a class="btn btn-primary" href="report.php" role="button">Generar Reporte</a>
+        <a class="btn btn-secondary" href="areas.php" role="button">Administrar areas</a>
+    </p>
+</div>
 
 <?php
 // Conexion a la base de datos 
@@ -24,15 +33,7 @@ require_once("dbConnection.php");
 $result = mysqli_query($mysqli, "SELECT * FROM personal ORDER BY id DESC");
 ?>
 
-<div class="jumbotron">
-    <h1 class="display-3">Personal</h1>
-    <h3 class="lead">Mantenimiento de personal</h3>
-    <hr class="my-2">
-    <p class="lead">
-        <a class="btn btn-success" href="add.php" role="button">Agregar personal</a>
-        <a class="btn btn-primary" href="report.php" role="button">Generar Reporte</a>
-    </p>
-</div>
+
 <div class="container">
   <div class="row">
     <div class="col">
