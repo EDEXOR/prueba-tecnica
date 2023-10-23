@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 		// If all the fields are filled (not empty) 
 
 		// Insert data into database
-		$result = mysqli_query($mysqli, "INSERT INTO personal (`nombres`, `apellidos`, `sexo`, `pais`, `departamento`, `fecha_nacimiento`, `email`, `area`) VALUES ('$nombres', '$apellidos', '$sexo', '$pais', '$fecha', '$email', '$area')");
+		$result = mysqli_query($mysqli, "INSERT INTO personal (`nombres`, `apellidos`, `sexo`, `pais`, `departamento`, `fecha_nacimiento`, `email`, `area`) VALUES ('$nombres', '$apellidos', '$sexo', '$pais', '$departamento', '$fecha', '$email', '$area')");
 		
 		// Display success message
 	
