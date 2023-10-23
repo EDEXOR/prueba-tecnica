@@ -2,7 +2,7 @@
 
 Instalación:
 
-Importar el archivo base_datos.sql
+Importar el archivo prueba_edward.sql
 
 Instalar la carpeta del sistema en el local host
 
