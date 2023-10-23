@@ -25,12 +25,12 @@ require_once("dbConnection.php");
         <form action="addAction.php" method="POST">
        
         <div class="form-group">
-            <label name="nombres" for="inputAddress">Nombres</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Nombres">
+            <label  for="inputAddress">Nombres</label>
+            <input name="nombres" type="text" class="form-control" id="inputAddress" placeholder="Nombres">
         </div>
         <div class="form-group">
-            <label name="apellidos" for="inputAddress2">Apellidos</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apellidos">
+            <label  for="inputAddress2">Apellidos</label>
+            <input name="apellidos" type="text" class="form-control" id="inputAddress2" placeholder="Apellidos">
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -42,15 +42,15 @@ require_once("dbConnection.php");
             <input name="departamento" type="text" class="form-control" id="departamento">
             </div>
             <div class="form-group col-md-2">
-            <label name="fecha" for="inputZip">Fecha de nacimiento</label>
-            <input type="date" class="form-control" id="inputZip">
+            <label  for="inputZip">Fecha de nacimiento</label>
+            <input type="date" name="fecha" class="form-control" id="inputZip">
             </div>
         </div>
         
         <div class="form-row">
             <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
             <div class="form-group col-md-6">
             <label for="seleccion">Area de trabajo</label>
